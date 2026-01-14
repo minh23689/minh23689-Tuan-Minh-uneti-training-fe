@@ -1,0 +1,30 @@
+.title{
+    color: green;
+}
+
+/* before after được sử dụng rất nhiều, cần lưu ý */
+.title::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+}
+
+.content::first-letter{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content::first-line{
+    color: green;
+
+}
+
+.content::selection{
+    color: lightblue;
+    background-color: black;
+}

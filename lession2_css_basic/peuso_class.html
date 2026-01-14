@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp giả</title>
+    <link rel="stylesheet" href="css/peuso_class.css">
+</head>
+
+<body>
+    <input type="text" class="field-item">
+    <button type="button" class="btn">Click here</button>
+
+    <p>
+    <form action="">
+        <p class="gender-field">
+            Giới tính <br>
+            <label for="male" class="">
+                <input type="radio" name="gender" value="1" id="male">
+                <!--chữ "Nam" phải chung 1 cha label để thuận tiện sử dụng cú pháp checked và dấu ~ -->
+                <span>Nam</span>
+            </label>
+            <label for="female" class="">
+                <input type="radio" name="gender" value="0" id="female">
+                <span>Nữ</span>
+            </label>
+        </p>
+    </form>
+    </p>
+    <form>
+        <div class="job-list">
+            <p>
+                <label for="job_1">
+                    <input type="checkbox" name="job-list" id="job_1">
+                    <span>Công việc 1</span>
+                </label>
+            </p>
+            <p>
+                <label for="job_2">
+                    <input type="checkbox" name="job-list" id="job_1">
+                    <span>Công việc 2</span>
+                </label>
+            </p>
+            <p>
+                <label for="job_3">
+                    <input type="checkbox" name="job-list" id="job_1">
+                    <span>Công việc 3</span>
+                </label>
+            </p>
+        </div>
+    </form>
+
+    <!--Menu toggle-->
+    <div class="menu-box">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">Menu</label>
+        <nav class="primary-menu">
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form action="" class="form-register">
+        <p>
+            <input type="text" class="field-item" placeholder="Tên đăng nhập...">
+        </p>
+        <p>
+            <input type="password" class="field-item" placeholder="Mật khẩu...">
+        </p>
+        <p>
+            <input type="text" class="field-item" placeholder="Họ tên..." disabled>
+        </p>
+        <button type="submit">Đăng ký</button>
+    </form>
+    <div class="content">
+        <p>Hello World</p>
+        <p></p>
+        <p>Hello World</p>
+        <p class="hightlight-text">
+            Hello World
+        </p>
+        <p>Hello World</p>
+    </div>
+
+    <ul class="list-position">
+        <span class="position">Vị trí 0</span>
+        <li class="position">Vị trí 1</li>
+        <li class="position">Vị trí 2</li>
+        <span class="position">Vị trí 2.1</span>
+        <li class="position">Vị trí 3</li>
+        <li class="position">Vị trí 4</li>
+        <li class="position">Vị trí 5</li>
+        <p class="position">Vị trí 5.1</p>
+    </ul>
+
+    <div class="product-lists">
+        <div class="product-item">
+            <h3>Sản phẩm 1</h3>
+        </div>
+        <div class="product-item">
+            <h3>Sản phẩm 2</h3>
+        </div>
+        <span>
+            <h3>Sản phầm 2.1</h3>
+        </span>
+        <div class="product-item">
+            <h3>Sản phẩm 3</h3>
+        </div>
+        <div class="product-item">
+            <h3>Sản phẩm 4</h3>
+        </div>
+        <div class="product-item">
+            <h3>Sản phẩm 5</h3>
+        </div>
+    </div>
+</body>
+
+</html>

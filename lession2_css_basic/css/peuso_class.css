@@ -1,0 +1,117 @@
+.btn{
+    background: red;
+    color: white;
+}
+
+/*Thay đổi khi con trỏ chuột đi qua*/
+.btn:hover{
+    background: green;
+}
+
+/*Thay đổi khi con trỏ đang focus vào item*/
+.field-item:focus{
+    background-color: cadetblue;
+}
+
+/*Thay đổi khi con trỏ chuột đang giữ item*/
+.field-item:active{
+    background-color: greenyellow;
+}
+
+.btn:focus{
+    background-color: blueviolet;
+}
+
+/*Kiểm tra xem input checked chưa rồi mới thay đổi*/
+.gender-field label input:checked ~ span{
+    color: green;
+    text-decoration: line-through;
+}
+
+.job-list input:checked ~ span{
+    color: green;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+/*Menu toggle*/
+.menu-box .primary-menu, 
+.menu-box #menu-toggle{
+    display: none;
+}
+
+.menu-box .menu-btn{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-box input:checked ~ .primary-menu{
+    display: block;
+}
+
+.menu-box input:checked ~ .menu-btn{
+    color: blueviolet;
+}
+/*Menu toggle end*/
+
+/*:disabled chỉ tác động với các thuộc tính disable của form*/
+.form-register .field-item:disabled{
+    background-color: grey;
+}
+/*:empty chỉ tác động với các thuộc tính rỗng*/
+.content p:empty{
+    height: 5px;
+    background-color: red;
+}
+
+/*:not()*/
+.content p:not(.hightlight-text){
+    color: green;
+}
+
+/*:first-child: chọn cái đầu tiên*/
+/* .list-position li:first-child{
+    color: red;
+    font-style: italic;
+} */
+
+.list-position .position:first-child{
+    color: red;
+    font-style: italic;
+}
+
+/*:last-child: chọn cái cuối cùng*/
+/* .list-position li:last-child{
+    color: purple;
+    font-weight: bold;
+} */
+
+.list-position .position:last-child{
+    color: purple;
+    font-weight: bold;
+}
+/*Note: :first-child và :last-child không áp dụng với trường hợp có một loại selector khác xen vào*/
+
+/*first of type (tương tự với first child nhưng không sợ bị chen vào)*/
+.list-position li:first-of-type{
+    color: brown;
+    font-style: oblique;
+}
+
+/*last of type*/
+.list-position li:last-of-type{
+    color: green;
+    font-style: initial;
+}
+
+
+/*Note: nth không sẽ không áp dụng và bỏ qua trường hợp không cùng một thẻ với các selector đứng trước nó*/
+.product-lists .product-item:nth-of-type(2n+1){
+    color:blueviolet;
+}
+
+.product-lists .product-item:nth-of-type(2n){
+    color:darkcyan;
+}
