@@ -1,0 +1,64 @@
+header,
+footer {
+  font-size: 15px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.non-box {
+  background-color: #fff;
+}
+
+p {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#text {
+  background-color: green;
+}
+.box {
+  background-color: aqua;
+}
+
+div {
+  background-color: aquamarine;
+}
+
+nav > ul ul ul > li {
+  background-color: rgb(16, 2, 28);
+  color: #ffffff;
+}
+nav > ul ul > li > a {
+  color: blanchedalmond;
+}
+
+div.block{
+  color: red;
+}
+
+p.block{
+  color: aquamarine;
+}
+
+/*.text và .element viết trước hay viết sau cũng được vì là 2 thuộc tính cùng cấp */
+.text.element{
+  color: bisque;
+}
+.title.element{
+  color: greenyellow;
+}
+
+/* Khai báo cùng cấp càng nhiều => độ ưu tiên càng cao */
+.product-box .product-item{
+  font-size: 30px;
+  color: cadetblue;
+  font-style: italic;
+}
+/* Ở chỗ này nếu chỉ viết là .product-box .feature thì thuộc tính của .product-box .product-item 
+sẽ có độ ưu tiên cao hơn vì có đường dẫn chi tiết hơn*/
+.product-box .product-item.feature{
+  font-size: 40px;
+  color: purple;
+  font-style: italic;
+}
+
