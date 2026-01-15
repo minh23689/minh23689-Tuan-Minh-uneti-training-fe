@@ -1,0 +1,37 @@
+/*
+Thuộc tính text-decoration
+-Tác dụng: Thêm các dấu gạch vào chữ
+-Cú pháp: text-decoration: <value>>
++ text-decoration: Tên thuộc tính
++value: Các kiểu gạch ngang
+++ none: Không có gạch ngang, giá trị mặc định
+++ underline: Gạch dưới
+++ line-through: Gạch giữa
+++ overline: Gạch trên
+=> Có thể kết hợp nhiều kiểu gạch ngang cùng lúc 
+
+Thuộc tính text-transform
+- Tác dụng: Thay đổi kiểu chữ hoa thường
+-Cú pháp: text-transform: <value>
++ none: Mặc định như bản gốc
+uppercase: Chữ hoa
++ lowercase: Chữ thường
++ capitalize: Ký tự đầu tiên của mỗi chữ đều viết hoa
+
+Thuộc tính text-indent
+- Tác dụng: Thay đổi khoảng cách dòng đầu tiên với lề trái
+- Cú pháp: text-indent: <value><unit>
++ text-indent: Tên thuộc tính
++ value: Giá trị mong muôn
++ unit: Đơn vị
+*/
+
+.text{
+    /* text-decoration: overline; */
+    text-transform: capitalize;
+    text-indent: 15px;
+}
+
+.content{
+    text-decoration: overline underline;
+}

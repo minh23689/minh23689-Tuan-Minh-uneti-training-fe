@@ -1,0 +1,35 @@
+/*
+Thuộc tính font-style
+- Tác dụng: Thay đổi kiểu chữ (Đứng, nghiêng)
+- Cú pháp: font-style: <value>
++ font-style: Tên thuộc tính
++ value: Tên kiểu
+++ normal: Giá trị mặc định, chữ đứng
+++ italic: Chữ nghiêng
+
+=> Lưu ý: Việc thay đổi kiểu chữ sẽ phụ thuộc vào font chữ
+
+Thuộc tính font-weight
+- Tác dụng: Thay đồi độ dày của chữ
+- Cú pháp: font-weight: <va lue>
++ font-weight: Tên thuộc tính
++ value: Giá trị độ dày
+++ normal: Mặc định
+++ 100, 200, 300, 400, 500, 600, 700, 800, 900 => Phụ thuộc vào
+font chữ
+++ bold
+++ bolder
+=> Lưu ý: Việc thay đổi độ dày chữ sẽ phụ thuộc vào font chữ
+*/
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.text{
+    font-style: italic;
+}
+
+.content{
+    font-weight: 900;
+}

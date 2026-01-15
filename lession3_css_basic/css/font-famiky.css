@@ -1,0 +1,26 @@
+/*
+Thuộc tính font-family
+- Tác dụng: Thay đổi font chữ cho văn bản
+- Cú pháp: font-family: <va lue>
++ font-family: Tên thuộc tính
++ value: Tên font chữ (Nếu tên font chữ có dấu cách => Bổ sung vào
+trong dấu nháy đơn hoặc nháy kép)
+=> Có thể đưa nhiều font chữ vào cùng 1 thuộc tính font-family
+*/
+
+/*
+Nạp font vào trang web
+Tên thuật ngữ: at-rule
+*/
+@font-face {
+    font-family: "1FTV-VIP-Bridgers-Brush";
+    src: url(../fonts/1FTV-VIP-Bridgers-Brush.otf);
+}
+.text{
+    font-family: '1FTV-VIP-Bridgers-Brush';
+    font-size: 50px;
+}
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+}
+

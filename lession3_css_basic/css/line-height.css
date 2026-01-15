@@ -1,0 +1,24 @@
+/*
+Thuộc tính line-height
+- Tác dụng: Giãn dòng văn bản trong trang web
+- Cũ pháp: line-height: <value> hoặc line-height: ‹value><unit>
++ Line-height: Tên thuộc tính
++ value: Giá trị cần giãn
++ unit: Đơn vị (Tương đối, tuyệt đối)
+
+Lưu ý:
+
+- Line-height sẽ tỷ lệ tương đối với thuộc tính font-size (kể cả
+font-size của selector dang set line-height)
+- Nếu Line-height có đơn vị => Tỷ lệ tương đối với font-size
+
+=> line-height = font-size * value
+*/
+
+body{
+    font-size: 20px;
+}
+
+.text{
+    line-height: 1.5em;
+}

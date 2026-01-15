@@ -1,0 +1,38 @@
+/* 
+Thuộc tính color
+- Tác dụng: Thay dổi màu sắc của văn bản
+- Cú pháp: color: <value>
+- color: Tên thuộc tính
+- value: Màu sắc cần thay dổi
+
+=> value sẽ nhận các giá trị:
++ Tên màu (Tiếng anh) => Chỉ áp dụng với các màu cơ bản, phổ biến
++ Mã màu hexa (#+6 ký tự): #330f0f
+  Nếu 6 ký tự giống nhau, chỉ cần viết 3 ký tự: #333
++ Màu rgp (rgb(number, number2, number3)): rgb(37, 86, 86)
++ Màu hsl: hsl(249, 31%, 47%)
+
+Các cách lấu mã màu:
+
++ Dùng colorpicker: VSCode, trang web online, Extentions, Phần mềm
+thiết kế: Photoshop, AI, XD,...
+
++ Extention hỗ trợ: colorzilla: https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=vi
+
++ Dùng qua DevTool
+
+Thiết lập Opacity của Color
+
++ Dùng DevTool để giảm Opacity
++ Dùng ColorPicker của VSCode để giảm Opacity
++ Dùng rgba(number, number2, number3, opacity)
+=> opacity trong rgba sẽ nhận từ 0 đến 1
++ Dùng rgb(): rgb(number, number2, number3 / opacity)
+=> opacity trong rgb() sẽ nhận từ 0 đến 100%
+
+LƯU Ý: Tất cả các thuộc tính liên quan đến màu sắc đều phải 
+áp dụng nguyên tắc của bài này
+*/
+.text{
+    color:rgb(26, 77, 196);
+}
