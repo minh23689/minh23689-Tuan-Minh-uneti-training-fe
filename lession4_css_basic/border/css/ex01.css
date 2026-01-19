@@ -1,0 +1,58 @@
+/*
+Thuộc tính border
+- Tác dụng: Tạo viền cho các thành phần trong trang
+web
+- Cú pháp: border: width style color
++ width: Độ dày của viền
++ style: Kiểu viền (solid, dash, dotted, double, ... )
++ color: Màu của viền
+
+Thuộc tính mở rộng của thuộc tính border
+- border-left: width style color
+- border-right: width style color
+- border-top: width style color
+- border-bottom: width style color
+
+Thuộc tính border-width
+- Tác dụng: Thiết lập độ dày của viền
+- Cú pháp: border-width: value
+
+Thuộc tính mở rộng của border-width
+- border-top-width
+- border-left-width
+- border-right-width
+- border-bottom-width
+
+Thuộc tính border-style
+- Tác dụng: Thiết lập kiểu của viền
+- Cú pháp: border-style: value
+
+Thuộc tính mở rộng của border-style
+- border-top-style
+- border-left-style
+- border-right-style
+- border-bottom-style
+
+Thuộc tính border-color
+- Tác dụng: Thiết lập màu của viền
+- Cú pháp: border-color: value
+
+Thuộc tính mở rộng của border-color
+- border-top-color
+- border-left-color
+- border-right-color
+- border-bottom-color
+*/
+
+.content{
+    /* border: 3px ridge red;
+    border-bottom: none; */
+    border-width: 2px;
+    border-top-width: 5px; 
+    border-style: ridge;
+    border-color: brown;
+}
+
+.wrapper .item{
+    border: 3px ridge red;
+}

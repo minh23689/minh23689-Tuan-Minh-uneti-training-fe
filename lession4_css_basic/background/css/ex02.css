@@ -1,0 +1,42 @@
+.sprites ul{
+    list-style: none;
+}
+
+.sprites ul li::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    background: url('../image/css_sprites.png') no-repeat;
+    background-size: 80px;
+    transition: all linear 0.1s;
+}
+
+.sprites ul li.facebook::before{
+    background-position: -16px 0px;
+}
+.sprites ul li.facebook:hover::before{
+    background-position: -16px -48px;
+}
+
+.sprites ul li.twitter::before{
+    background-position: 0px 0px;
+}
+.sprites ul li.twitter:hover::before{
+    background-position: 0px -48px;
+}
+
+
+.sprites ul li.vk::before{
+    background-position: -48px 0px;
+}
+.sprites ul li.vk:hover::before{
+    background-position: -48px -48px;
+}
+
+.sprites ul li{
+    line-height: 24px;
+}

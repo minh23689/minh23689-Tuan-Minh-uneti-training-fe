@@ -1,0 +1,107 @@
+/*
+Thuộc tính background-color
+- Tác dụng: Thay đổi nền màu của thành phần trên
+trang web
+- Cú pháp: background-color: value
++ background-color: Tên thuộc tính
++value: Giá trị màu (Giống như color đã học)
+
+Thuộc tính background-image
+-Tác dụng: Thay đổi nền ảnh của thành phần trên trang web
+-Cú pháp: background-image: url('path_image')
++ background-image: Tên thuộc tính
++ path_image: Đường dẫn tới ảnh cần thiết lập (Tương đối và tuyệt đối)
+
+Lưu ý: 
+- Khi sử dụng background-image sẽ có các thuộc tính mở rộng dưới
+đây (Không liên quan đến background-color)
+- Trong cùng 1 selector, có thể kết hợp background-color và background-image. 
+Tuy nhiên sẽ ưu tiên background-image (background-color chỉ hiển thị khi 
+background-image bị lỗi ko hiển thị hoặc image chưa tải xong)
+
+Thuộc tính background-size
+- Tác dụng: Thay đổi kích thước của nền ảnh so với khung hiển thị
+Cú pháp: background-size: value
++ background-size: Tên thuộc tính
++ value: Các giá trị size
+++ kích thước tuyệt đối (1 đối số, 2 đối số)
+>> background-size: 200px => Chiều rộng = 200px, chiều cao tự động
+=> background-size: 400px 200px => Chiều rộng là đổi số thứ 1, chiều cao là đổi số thứ 2
+++ Kích thước tương đối (1 đối số, 2 đối số)
+>background-size: 100% => Chiều rộng = 100% (Tỷ lệ theo chiều rộng của khung hiển thị), chiều cao tự động
+> background-size: 100% 50% => Chiều rộng = 100%, chiều cao = 50%
+++ cover Áp dụng cho kiểu background cover
+++ contain => Áp dụng cho kiểu background contain (Chiều rộng sẽ tự động, chiều cao sẽ full theo chiều cao của khung hiển thị)
+
+Thuộc tính background-repeat
+Tác dụng: Điều chỉnh độ lập của background (Trong trường hợp size nhỏ hơn size của khung hiển thị)
+-Cú pháp: background-repeat: value
++ repeat: Lập theo cả trục x và trục y (Mặc định)
++ repeat-x: Lập theo trục x
++ repeat-y: Lập theo trục y
++ no-repeat: Không lặp
+
+Thuộc tính background-position
+-Tác dụng: Căn chỉnh vị trí background so với khung hiển thị
+-
+Cú pháp: background-position: pos_x pos_y
++ pos_x: Căn chỉnh theo trục x (các giá trị tuyệt đối, tương đối, left, center, right)
++ pos_y: Căn chỉnh theo trục y (các giá trị tuyệt đối, tương đối, top, center, bottom)
+
+Thuộc tính background-attachment
+- Tác dụng: Cố định background khi kéo theo cuộn (scrolling)
+- Cú pháp: background-attachment: value
++ scroll: Mặc định, khi kéo thanh cuộn => background cũng cuộn theo
++ fixed: Cố định background khi kéo thanh cuộn
+
+Thuộc tính background
+- Tác dụng: Tổng hợp tất cả thuộc tính liên quan đến background (Trừ background-size)
+- Cú pháp: background: color image repeat position
+*/
+
+/* body{
+    background-color: rgb(51, 119, 11);
+} */
+
+body{
+    background-image: url('../image/image02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content{
+    background-color: #00bca266;
+    color: #fff;
+    /*Web: lorem picsum*/
+    background-image: url('https://picsum.photos/200/900');
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.text{
+    background-image: url('../image/image03.jpg');
+    color: #fff;
+    background-color:rgba(80, 40, 190, 0.352) ;
+    height: 900px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    /*trong background position, x và y có thê dương hoặc âm chứ không nhất thiết chỉ là dương*/
+    background-position: 50% 50%;
+}
+
+.block{
+    background-image: url('../image/image03.jpg');
+    color: #fff;
+    background-color:rgba(70, 190, 40, 0.352) ;
+    height: 200px;
+    background-size: contain;
+}
+
+.element{
+    color: #fff;
+    /*Thuộc tính background không nhất thiết phải sắp xếp theo thứ tự: "color image repeat position"*/
+    background: rgba(137, 43, 226, 0.219) url("../image/image03.jpg") no-repeat center 60%;
+    height: 200px;
+    background-size: 400px 100px;
+}
